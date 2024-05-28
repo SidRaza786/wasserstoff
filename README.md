@@ -12,6 +12,8 @@ This project is a Flask-based web application designed to create and manage a FA
   **Question Answering**: Uses RAG to provide answers to user queries based on the content stored in the FAISS database.
   
   **Flask Web Interface**: Provides a simple web interface for interacting with the system.
+
+### This is the interface ![Screenshot from 2024-05-28 11-22-52](https://github.com/SidRaza786/wasserstoff/assets/107919240/5c1998a5-f5e1-47f1-bf52-792d5c579aac)
     
 ## Installation
 ### Prerequisites
@@ -24,33 +26,33 @@ This project is a Flask-based web application designed to create and manage a FA
     FAISS
     Google Generative AI (for the LLM)
     
-### This is the interface ![Screenshot from 2024-05-28 11-22-52](https://github.com/SidRaza786/wasserstoff/assets/107919240/5c1998a5-f5e1-47f1-bf52-792d5c579aac)
+
 
 ## Setup
 
-1. Clone the repository and move into it.
+1. Clone the repository and create a virtual-environment and activate.
     ```sh
     https://github.com/SidRaza786/wasserstoff.git
     cd AiTask
-    ```
-2 Create a virtual-environment and activate
-    ```sh
+    
     python3 -m venv chat
     source chat/bin/activate
     ```
+    
 
-2. Install the required packages.
+ 2. Install the required packages.
     ```sh
     pip install -r requirements.txt
     ```
 
-3. Set up environment variables.
+ 3. Set up environment variables.Create a **.env** file in the project root directory and add your Hugging Face and Google API keys.
 
-    Create a .env file in the project root directory and add your Hugging Face and Google API keys.
+    
    ```sh
     HUGGINGFACE_TOKEN=your_huggingface_token
     GOOGLE_API_KEY=your_google_api_key
-    ```
+   ```
+
   
 4. tart the Flask server.
     ```sh
